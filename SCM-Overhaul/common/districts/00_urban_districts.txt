@@ -28,6 +28,7 @@ district_city = {
 	allow = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+		NOT = { has_modifier = ecoworld_housing_buff }
 	}
 
 	conversion_ratio = 0.5
@@ -245,6 +246,7 @@ district_hive = {
 
 	allow = {
 		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = ecoworld_housing_buff }
 	}
 
 	conversion_ratio = 0.5
@@ -401,6 +403,7 @@ district_nexus = {
 
 	allow = {
 		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = ecoworld_housing_buff }
 	}
 
 	conversion_ratio = 0.5

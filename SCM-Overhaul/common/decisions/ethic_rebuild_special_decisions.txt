@@ -400,3 +400,47 @@ decision_boost_market_nomination = {
 		}
 	}
 }
+
+#Ecumenopolis Alternative
+#Adds housing, pop growth speed (like ecumenopolis), decreases building build time and strategic resource upkeep.
+decision_ecoworld = {
+	owned_planets_only = yes
+
+	enactment_time = 1800 # 5 years
+	resources = {
+		category = decisions
+		cost = {
+			alloys = 5000
+            food = 6720
+            influence = 200
+		}
+	}
+
+	potential = {
+		is_planet_class = pc_gaia
+		exists = owner
+		owner = { has_ascension_perk = ap_world_shaper }
+	}
+
+	allow = {
+		free_district_slots < 1
+		num_districts = { type = district_city value < 1 }
+		num_districts = { type = district_hive value < 1 }
+		num_districts = { type = district_nexus value < 1 }
+	}
+
+	effect = {
+		add_modifier = {
+			modifier = ecoworld_building_buff
+			days = -1
+		}
+		add_modifier = {
+			modifier = ecoworld_growth_buff
+			days = -1
+		}
+		add_modifier = {
+			modifier = ecoworld_housing_buff
+			days = -1
+		}
+	}
+}

@@ -161,3 +161,23 @@ promoted_elitist = {
  	pop_ethic_elitist_attraction_mult = 1
  	country_base_influence_produces_add = -2
  }
+
+ecoworld_building_buff = {
+	# Weirdly, these are additive modifiers???
+	# Intent: a level 2 research/alloys/cgs building will be less productive, but cheaper to build and maintain than the corresponding arcology
+	planet_structures_volatile_motes_upkeep_mult = -0.3
+	planet_structures_exotic_gases_upkeep_mult = -0.3
+	planet_structures_rare_crystals_upkeep_mult = -0.3
+	planet_buildings_cost_mult = -0.5
+	building_time_mult = -0.5
+}
+
+ecoworld_housing_buff = {
+#	pop_housing_mult = 4
+	# Checked for in district code instead.
+	# 4 extra housing per rural district; urban district disabled.
+}
+
+ecoworld_growth_buff = {
+	bio_pop_growth_speed = 0.5
+}
